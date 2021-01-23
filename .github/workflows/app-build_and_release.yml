@@ -3,7 +3,7 @@ name: Build and Release App
 on:
   push:
     tags:
-      - 'v*'
+      - 'app-v*'
 
 jobs:
   prepare_release:
@@ -18,7 +18,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
+          release_name: App Release ${{ github.ref }}
           draft: true
   build:
     runs-on: ubuntu-latest

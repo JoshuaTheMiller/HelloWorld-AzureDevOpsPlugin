@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "hello-world",
     "publisher": "JoshuaTheMiller",
-    "version": "0.0.25",
+    "version": "0.0.28",
     "name": "Hello World Extension",
     "description": "A Sample Azure DevOps Services/Server extension.",
     "public": false,
@@ -25,11 +25,24 @@
             "properties": {
                 "name": "installTask"
             }
+        },
+        {
+            "id": "run-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "runTask"
+            }
         }
     ],
     "files": [
         {
             "path":"installTask"
+        },
+        {
+            "path":"runTask"
         }
     ],
     "content": {

@@ -1,0 +1,55 @@
+{
+    "manifestVersion": 1,
+    "id": "hello-world",
+    "publisher": "JoshuaTheMiller",
+    "version": "0.0.11",
+    "name": "Hello World Extension",
+    "description": "A Sample Azure DevOps Services/Server extension.",
+    "public": false,
+    "categories": ["Azure Pipelines"],
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "icons": {
+        "default": "images/extension-icon.png"        
+    },
+    "contributions": [
+        {
+            "id": "install-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "installTask"
+            }
+        }
+    ],
+    "files": [
+        {
+            "path":"installTask"
+        }
+    ],
+    "content": {
+        "details": {
+            "path": "README.md"
+        }
+    },
+    "links": {
+        "home": {
+            "uri": "https://github.com/JoshuaTheMiller/HelloWorld-AzureDevOpsPlugin"
+        },
+        "repository": {
+            "uri": "https://github.com/JoshuaTheMiller/HelloWorld-AzureDevOpsPlugin"
+        },
+        "issues": {
+            "uri": "https://github.com/JoshuaTheMiller/HelloWorld-AzureDevOpsPlugin/issues"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/JoshuaTheMiller/HelloWorld-AzureDevOpsPlugin"
+    }
+}

@@ -2,10 +2,10 @@
     "manifestVersion": 1,
     "id": "hello-world",
     "publisher": "JoshuaTheMiller",
-    "version": "0.0.28",
+    "version": "0.0.30",
     "name": "Hello World Extension",
     "description": "A Sample Azure DevOps Services/Server extension.",
-    "public": false,
+    "public": true,
     "categories": ["Azure Pipelines"],
     "targets": [
         {

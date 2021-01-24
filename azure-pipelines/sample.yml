@@ -7,5 +7,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: JoshuaTheMiller.hello-world.install-task.InstallHelloWorld@0
-- task: JoshuaTheMiller.hello-world.run-task.RunHelloWorldApp@0
+- task: InstallHelloWorld@0
+  inputs:
+    version: '0.0.1'
+- task: RunHelloWorldApp@0

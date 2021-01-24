@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "hello-world",
     "publisher": "JoshuaTheMiller",
-    "version": "0.0.11",
+    "version": "0.0.13",
     "name": "Hello World Extension",
     "description": "A Sample Azure DevOps Services/Server extension.",
     "public": false,
@@ -51,5 +51,12 @@
     "repository": {
         "type": "git",
         "uri": "https://github.com/JoshuaTheMiller/HelloWorld-AzureDevOpsPlugin"
-    }
+    },
+    "badges": [
+        {
+            "uri":"https://img.shields.io/github/license/JoshuaTheMiller/HelloWorld-AzureDevOpsPlugin?style=flat-square",
+            "href":"https://github.com/JoshuaTheMiller/HelloWorld-AzureDevOpsPlugin/blob/main/LICENSE",
+            "description":"The License for this project"
+        }
+    ]    
 }

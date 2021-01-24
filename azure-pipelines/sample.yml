@@ -1,0 +1,11 @@
+# Schema: https://raw.githubusercontent.com/microsoft/azure-pipelines-vscode/master/service-schema.json
+
+trigger: none
+pr: none
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: JoshuaTheMiller.hello-world.install-task.InstallHelloWorld@0
+- task: JoshuaTheMiller.hello-world.run-task.RunHelloWorldApp@0

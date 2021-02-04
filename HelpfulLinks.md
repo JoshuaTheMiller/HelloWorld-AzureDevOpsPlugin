@@ -33,3 +33,7 @@
 *And why not to do them... yet*
 
 * https://jessehouwing.net/vsts-build-release-define-custom-authentication-scheme/
+
+## Build Tools for Building These Tools
+
+* https://jessehouwing.net/vsts-relnote-ci-cd-tools-for-vsts-extensions-1-1-75/
